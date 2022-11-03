@@ -5,7 +5,7 @@ from pprint import pprint
 def print_head(data, rows=5):
     
     # DataFrame
-    if type(data) in [pd.core.frame.DataFrame]:
+    if type(data) in [pd.core.frame.DataFrame, pd.core.series.Series]:
         
         pd.set_option("display.max_rows", rows)
         display(data)
