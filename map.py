@@ -1,7 +1,7 @@
 from tqdm import tqdm
 from multiprocessing import Pool
 
-def map_with_mp_and_tqdm(func, data, processes=8):
+def map(func, data, processes=8):
 
     results = []
     pool = Pool(processes=processes)
