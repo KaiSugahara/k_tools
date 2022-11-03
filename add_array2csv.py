@@ -1,6 +1,6 @@
 import csv
 
-def add_array2csv(arr, filepath="./log.csv", is_culumns=False):
+def add_array2csv(arr, filepath="./log.csv", is_columns=False):
     
     mode = "w" if is_culumns else "a"
     
