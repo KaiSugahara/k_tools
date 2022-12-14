@@ -4,3 +4,4 @@ from .print_head import *
 from .map import *
 from .imap_unordered import *
 from .print2File import print2File
+from .product_sparse_matrix import product_sparse_matrix
