@@ -5,8 +5,7 @@ def print2File(*text, file_name="./log.txt", is_init=False, include_time=False):
 
     if is_init:
         
-        print(*text)
-        print(*text, file=codecs.open(file_name, 'w', 'utf-8'))
+        print(file=codecs.open(file_name, 'w', 'utf-8'), end="")
 
     else:
 
