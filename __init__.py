@@ -6,3 +6,4 @@ from .imap_unordered import *
 from .print2File import print2File
 from .product_sparse_matrix import product_sparse_matrix
 from .save_array_as_json import save_array_as_json
+from .read_json_as_array import read_json_as_array
