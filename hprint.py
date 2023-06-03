@@ -15,8 +15,8 @@ def hprint(data, rows=5):
     # Polars DataFrame
     elif type(data) in [pl.dataframe.frame.DataFrame, pl.series.series.Series]:
 
-        pl.Config.set_tbl_rows(rows)
-        display(data)
+        with pl.Config(tbl_rows=rows):
+            display(data)
         
     # Dict
     elif type(data) is dict:
